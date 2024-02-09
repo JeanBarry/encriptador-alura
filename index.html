@@ -1,17 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Encriptador</title>
-    <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header__nav">
-        <img class="header__img" src="assets/logo.svg" alt="alura logo" />
-      </nav>
-    </header>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Encriptador</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+  <nav class="header__nav">
+    <img class="header__img" src="assets/logo.svg" alt="alura logo"/>
+  </nav>
+</header>
+<main class="encryption-section">
+  <textarea class="encryption-section__textbox" placeholder="Ingrese el texto aqui"></textarea>
+  <div class="encryption-section__warning">
+    <div class="encryption-section__warning-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        fill="#67808E"
+      >
+        <path
+          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
+        />
+      </svg>
+    </div>
+    <p class="encryption-section__warning-message">
+      Solo letras minúsculas y sin acentos
+    </p>
+  </div>
+  <div class="encryption-section__buttons-container">
+    <button class="encryption-section__button encryption-section__button-primary rounded" type="button">
+      Encriptar
+    </button>
+    <button class="encryption-section__button rounded" type="button">
+      Desencriptar
+    </button>
+  </div>
+  <div class="encryption-section__result-container rounded">
+    <div class="result-container-default">
+      <p class="result-container--title">Ningún mensaje fue encontrado</p>
+      <p class="result-container__description">Ingresa el texto que desees encriptar o desencriptar.</p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
 </html>
